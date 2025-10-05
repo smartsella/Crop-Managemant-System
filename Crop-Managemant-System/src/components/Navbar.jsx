@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <span className="text-2xl">🌱</span>
-            <h1 className="text-xl font-bold">Crop Management System</h1>
+            <h1 className="text-xl font-bold">Crop Management</h1>
           </div>
 
           <div className="flex space-x-1">

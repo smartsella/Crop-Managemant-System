@@ -9,19 +9,27 @@ import WeatherIntegration from "./pages/WeatherIntegration";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/planting-calendar" element={<PlantingCalendar />} />
-          <Route path="/growth-tracking" element={<GrowthTracking />} />
-          <Route path="/pest-database" element={<PestDatabase />} />
-          <Route path="/harvest-predictions" element={<HarvestPredictions />} />
-          <Route path="/weather-integration" element={<WeatherIntegration />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/planting-calendar" element={<PlantingCalendar />} />
+            <Route path="/growth-tracking" element={<GrowthTracking />} />
+            <Route path="/pest-database" element={<PestDatabase />} />
+            <Route
+              path="/harvest-predictions"
+              element={<HarvestPredictions />}
+            />
+            <Route
+              path="/weather-integration"
+              element={<WeatherIntegration />}
+            />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
